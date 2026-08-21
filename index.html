@@ -3,40 +3,49 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Conector Angel</title>
-<meta name="description" content="Utilidad personal de Ángel Sánchez Melcón para consultar su propia cuenta de Google desde su ordenador.">
+<title>Melcón Estudio · Ángel Sánchez</title>
+<meta name="description" content="Vídeo, anuncios y páginas web para negocios. Ángel Sánchez, Extremadura.">
+<meta name="robots" content="noindex">
 <link rel="stylesheet" href="estilo.css">
+<style>
+  .marca{ font-size:clamp(2rem,1.4rem+2.4vw,3rem); letter-spacing:-.03em; margin:0 0 .2rem }
+  .marca span{ color:var(--acento) }
+  .oficio{ font-size:1.1rem; color:var(--suave); margin:0 0 2.8rem }
+  .que{ display:grid; gap:1.4rem; margin:0 0 3rem }
+  .que div{ padding-left:1rem; border-left:2px solid var(--linea) }
+  .que h2{ margin:0 0 .2rem; font-size:1rem }
+  .que p{ margin:0; color:var(--suave); font-size:.97rem }
+  .aviso{ font-size:.9rem; color:var(--suave); padding:.9rem 1rem;
+          border:1px solid var(--linea); border-radius:8px; margin-bottom:2.5rem }
+</style>
 </head>
 <body>
 <main class="hoja">
-  <h1>Conector Angel</h1>
-  <p class="entradilla">Utilidad personal para consultar mi propia cuenta de Google desde mi ordenador.</p>
+  <h1 class="marca">Melcón<span>.</span> Estudio</h1>
+  <p class="oficio">Ángel Sánchez · Vídeo, anuncios y páginas web para negocios.</p>
 
-  <p>Esto no es un producto ni un servicio para terceros. Es una herramienta que uso yo,
-     <strong>Ángel Sánchez Melcón</strong>, para trabajar con mi correo, mi agenda y mis
-     documentos sin tener que ir copiándolos a mano de una ventana a otra.</p>
+  <div class="aviso">Estamos montando la casa. Mientras tanto, lo de siempre: se responde
+    a los correos el mismo día.</div>
 
-  <h2>Qué hace</h2>
-  <ul>
-    <li>Busca y lee mensajes de mi correo, y deja respuestas guardadas en Borradores para que yo las revise y las envíe.</li>
-    <li>Consulta mi agenda y los calendarios compartidos conmigo, y me deja anotar o cerrar avisos.</li>
-    <li>Lee documentos, hojas de cálculo y archivos que tengo en Drive o que otros han compartido conmigo.</li>
-  </ul>
-
-  <h2>Qué no hace</h2>
-  <ul>
-    <li><strong>No puede enviar correo.</strong> Los permisos concedidos no lo permiten.</li>
-    <li><strong>No puede borrar correo</strong> ni modificar archivos de Drive.</li>
-    <li>No tiene usuarios además de mí, ni recoge datos de nadie más.</li>
-  </ul>
-
-  <h2>Privacidad</h2>
-  <p>El detalle de a qué accede y qué se hace con ello está en la
-     <a href="privacidad.html">política de privacidad</a>.</p>
+  <div class="que">
+    <div>
+      <h2>Vídeo y contenido</h2>
+      <p>Piezas para redes y anuncios, producidas de principio a fin.</p>
+    </div>
+    <div>
+      <h2>Campañas de publicidad</h2>
+      <p>Anuncios pensados para traer clientes, no para acumular visitas.</p>
+    </div>
+    <div>
+      <h2>Páginas web</h2>
+      <p>Rápidas, impecables en el móvil y hechas para que el visitante haga algo:
+         llamar, reservar o escribir.</p>
+    </div>
+  </div>
 
   <div class="pie">
-    Ángel Sánchez Melcón · Extremadura, España<br>
-    Contacto: <a href="mailto:angelsanchezmelcon@gmail.com">angelsanchezmelcon@gmail.com</a>
+    <a href="mailto:angelsanchezmelcon@gmail.com">angelsanchezmelcon@gmail.com</a><br>
+    Extremadura, España
   </div>
 </main>
 </body>
