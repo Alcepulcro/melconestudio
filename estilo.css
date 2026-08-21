@@ -1,0 +1,25 @@
+:root{
+  --tinta:#1b1b1f; --suave:#5c5c66; --fondo:#fbfbfc; --linea:#e3e3e8; --acento:#2b5fd9;
+}
+@media (prefers-color-scheme: dark){
+  :root{ --tinta:#ececf0; --suave:#a0a0ab; --fondo:#141417; --linea:#2c2c33; --acento:#7d9bf0; }
+}
+*{box-sizing:border-box}
+body{
+  margin:0; background:var(--fondo); color:var(--tinta);
+  font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  -webkit-text-size-adjust:100%;
+}
+.hoja{ max-width:44rem; margin:0 auto; padding:3rem 1.5rem 5rem }
+h1{ font-size:clamp(1.6rem,1.2rem+1.6vw,2.2rem); line-height:1.2; margin:0 0 .4rem; letter-spacing:-.02em }
+h2{ font-size:1.15rem; margin:2.4rem 0 .7rem; letter-spacing:-.01em }
+.entradilla{ color:var(--suave); margin:0 0 2.5rem; font-size:1.05rem }
+p,li{ margin:0 0 .9rem }
+ul{ padding-left:1.2rem }
+a{ color:var(--acento) }
+table{ border-collapse:collapse; width:100%; margin:1rem 0; font-size:.94rem }
+th,td{ text-align:left; padding:.6rem .7rem; border-bottom:1px solid var(--linea); vertical-align:top }
+th{ font-weight:600; color:var(--suave); font-size:.82rem; text-transform:uppercase; letter-spacing:.05em }
+.pie{ margin-top:3.5rem; padding-top:1.5rem; border-top:1px solid var(--linea); color:var(--suave); font-size:.9rem }
+.fecha{ color:var(--suave); font-size:.9rem }
+code{ background:var(--linea); padding:.1em .35em; border-radius:4px; font-size:.9em }
