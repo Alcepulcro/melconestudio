@@ -8,15 +8,30 @@
 <meta name="robots" content="noindex">
 <link rel="stylesheet" href="estilo.css">
 <style>
-  .marca{ font-size:clamp(2rem,1.4rem+2.4vw,3rem); letter-spacing:-.03em; margin:0 0 .2rem }
+  .marca{ font-size:clamp(2rem,1.4rem+2.4vw,3rem); letter-spacing:-.02em; margin:0 0 .3rem }
   .marca span{ color:var(--acento) }
-  .oficio{ font-size:1.1rem; color:var(--suave); margin:0 0 2.8rem }
-  .que{ display:grid; gap:1.4rem; margin:0 0 3rem }
+  .oficio{ font-size:1.05rem; color:var(--suave); margin:0 0 2.4rem }
+  .que{ display:grid; gap:1.3rem; margin:0 0 2.8rem }
   .que div{ padding-left:1rem; border-left:2px solid var(--linea) }
-  .que h2{ margin:0 0 .2rem; font-size:1rem }
+  .que h2{ margin:0 0 .2rem; font-size:1rem; font-family:var(--cuerpo); font-weight:600 }
   .que p{ margin:0; color:var(--suave); font-size:.97rem }
-  .aviso{ font-size:.9rem; color:var(--suave); padding:.9rem 1rem;
-          border:1px solid var(--linea); border-radius:8px; margin-bottom:2.5rem }
+  .aviso{ font-size:.94rem; color:var(--suave); padding:1rem 1.1rem; background:var(--carta);
+          border:1px solid var(--linea); border-left:3px solid var(--acento);
+          border-radius:0 8px 8px 0; margin-bottom:2.4rem }
+  /* El contacto, como botones y no como enlaces subrayados: aquí es lo que se
+     pulsa, y en un móvil hay que poder acertar con el dedo. */
+  .contacto{ display:flex; flex-wrap:wrap; gap:.6rem; margin:0 0 .4rem }
+  .contacto a{
+    display:inline-flex; align-items:center; gap:.5rem; min-height:44px;
+    padding:.7rem 1.1rem; border-radius:99px; text-decoration:none;
+    border:1px solid var(--linea); background:var(--carta); color:var(--tinta);
+    font-size:.95rem;
+  }
+  .contacto a.principal{ background:var(--acento); border-color:var(--acento); color:#fff }
+  .contacto a.principal:hover{ filter:brightness(.92) }
+  .contacto a:hover{ border-color:var(--acento) }
+  .donde{ font-family:var(--dato); font-size:.82rem; letter-spacing:.05em;
+          text-transform:uppercase; color:var(--suave); margin:1.2rem 0 0 }
 </style>
 </head>
 <body>
@@ -44,8 +59,11 @@
   </div>
 
   <div class="pie">
-    <a href="mailto:angelsanchezmelcon@gmail.com">angelsanchezmelcon@gmail.com</a><br>
-    Extremadura, España
+    <div class="contacto">
+      <a class="principal" href="https://wa.me/34610954876">Escríbeme por WhatsApp</a>
+      <a href="mailto:angelsanchezmelcon@gmail.com">angelsanchezmelcon@gmail.com</a>
+    </div>
+    <p class="donde">Extremadura, España</p>
   </div>
 </main>
 </body>
